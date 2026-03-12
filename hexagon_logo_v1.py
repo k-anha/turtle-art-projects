@@ -6,12 +6,12 @@ import shapes
 import turtle
 
 
-def draw_hexagon_logo():
+def draw_hexagon_logo(size:int=90,speed:int=100):
     #Defining turtle pen here
     t = turtle.Turtle()
 
     #Set turtle speed here
-    t.speed(10)
+    t.speed(speed)
     
     #Set colors here
     colors: list[str] = [
@@ -28,7 +28,7 @@ def draw_hexagon_logo():
     t.fd(90)
     t.pd()
     x, y = t.pos()
-    base: int = 90
+    base: int = size
     for i in range(1, 7):
         shapes.draw_regular_trapezoid(
             x,
@@ -46,4 +46,7 @@ def draw_hexagon_logo():
         t.fd(base / 2)
         t.pd()
         x, y = t.pos()
+        t.ht()
     turtle.exitonclick()
+
+draw_hexagon_logo()
