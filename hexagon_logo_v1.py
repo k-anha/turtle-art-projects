@@ -6,14 +6,14 @@ import shapes
 import turtle
 
 
-def draw_hexagon_logo(size:int=90,speed:int=100):
-    #Defining turtle pen here
+def draw_hexagon_logo(size: int = 90, speed: int = 100):
+    # Defining turtle pen here
     t = turtle.Turtle()
 
-    #Set turtle speed here
+    # Set turtle speed here
     t.speed(speed)
-    
-    #Set colors here
+
+    # Set colors here
     colors: list[str] = [
         "purple",
         "indigo",
@@ -48,5 +48,6 @@ def draw_hexagon_logo(size:int=90,speed:int=100):
         x, y = t.pos()
         t.ht()
     turtle.exitonclick()
+
 
 draw_hexagon_logo()
