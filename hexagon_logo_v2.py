@@ -4,7 +4,7 @@ import shapes
 import turtle
 
 
-def draw_hexagon_logo(speed: int = 5, length: int = 200, gap: int = 10):
+def draw_hexagon_logo(speed: int = 5, length: int = 100, gap: int = 10):
     t: object = turtle.Turtle()
 
     t.speed(speed)
